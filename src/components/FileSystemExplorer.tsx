@@ -14,7 +14,6 @@ const FileGrid = dynamic(() => import('./explorer/FileGrid'), {
 
 const FileModals = dynamic(() => import('./explorer/FileModals'), {
   ssr: false,
-  loading: () => null, // Modals should be silent while loading to avoid layout shift
 });
 
 export default function FileSystemExplorer() {
